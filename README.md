@@ -60,3 +60,10 @@ Setelah itu tekan CREATE
 Pada tampilan Resource Handler 
 
 Requires Secure Access diganti menjadi (NO)
+
+<---Cara Membuat Query Delete--->
+
+begin
+delete from q_product where PRODUCTID = :ID;
+end;
+
