@@ -46,3 +46,17 @@ begin
 update q_product set :productname, :category, :buyprice, :sellprice, :description where productid = :id
 commit;
 end;
+
+Membuat DELETE
+Hanya yang berbintang yang diisi
+contohnya :
+*Name : delete_product
+*Pagination Size :25
+*URL Template : del_product/{id}
+Method : DELETE
+
+Setelah itu tekan CREATE
+
+Pada tampilan Resource Handler 
+
+Requires Secure Access diganti menjadi (NO)
