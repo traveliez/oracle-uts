@@ -85,3 +85,19 @@ Sintaks ini adalah untuk menyambungkan dengan bootstrap, yang digunakan untuk ta
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
+<?php foreach ($hasil['items'] as $value): ?>
+
+
+		<td><?php echo $value['productid'] ?></td>
+		<td><?php echo $value['productname'] ?></td>
+		<td><?php echo $value['category'] ?></td>
+		<td><?php echo $value['buyprice'] ?></td>
+		<td><?php echo $value['sellprice'] ?></td>
+		<td><?php echo $value['description'] ?></td>
+		<td><a href="" class="btn btn-danger">Delete</button></td>
+
+
+
+<?php endforeach ?>
+
+bagian ini untuk melooping data untuk ditampilkan
