@@ -40,3 +40,9 @@ hanya yang berbintang yang diisi
 Name diisi dengan "put_product" 
 required privilege tidak usah diubah 
 status tidak diubah
+
+======Cara Menambahkan Query pada put_product======
+begin
+update q_product set :productname, :category, :buyprice, :sellprice, :description where productid = :id
+commit;
+end;
