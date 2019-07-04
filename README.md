@@ -34,3 +34,9 @@ BEGIN
   INSERT INTO Q_PRODUCT(PRODUCTID, PRODUCTNAME, CATEGORY, BUYPRICE, SELLPRICE, DESCRIPTION)
   VALUES (id, :PRODUCTNAME, :CATEGORY, :BUYPRICE, :SELLPRICE, :DESCRIPTION);
 end;
+
+----Membuwat put q_product---- 
+hanya yang berbintang yang diisi 
+Name diisi dengan "put_product" 
+required privilege tidak usah diubah 
+status tidak diubah
