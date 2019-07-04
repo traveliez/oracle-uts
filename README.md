@@ -12,6 +12,12 @@ Field:
 - Sellprice Number (10,2)
 - Description Varchar (250)
 
-Cara Menambahkan Query Pada get_product
+----Membuat Get q_product----
+hanya yang berbintang yang diisi
+Name diisi dengan "get_product"
+required privilege tidak usah diubah
+status tidak diubah
+
+- Cara Menambahkan Query Pada get_product
 select * from q_product
 jadi source code di atas adalah cara menampilkan semua data
