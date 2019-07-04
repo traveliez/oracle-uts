@@ -5,9 +5,9 @@ Database dengan oracle
 
 Nama Table: q_product
 Field: 
-- Productid (PK)
-- ProductName 
-- Category
-- Buyprice
-- Sellprice
-- Description
+- Productid (PK) Number(7,0)
+- ProductName Varchar(25)
+- Category Varchar (25)
+- Buyprice Number (10,2)
+- Sellprice Number (10,2)
+- Description Varchar (250)
