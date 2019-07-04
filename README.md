@@ -21,3 +21,8 @@ status tidak diubah
 - Cara Menambahkan Query Pada get_product
 select * from q_product
 jadi source code di atas adalah cara menampilkan semua data
+
+---Penjelasan tentang POST---
+
+name diisi dengan name dan post_product dan hanya yang berbintang diisi
+required privilege dan status tidak diubah
