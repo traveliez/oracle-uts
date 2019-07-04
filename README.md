@@ -26,3 +26,11 @@ jadi source code di atas adalah cara menampilkan semua data
 
 name diisi dengan name dan post_product dan hanya yang berbintang diisi
 required privilege dan status tidak diubah
+
+======Cara Menambahkan Query pada post_product======
+DECLARE
+  id Q_PRODUCT.PRODUCTID%type;
+BEGIN
+  INSERT INTO Q_PRODUCT(PRODUCTID, PRODUCTNAME, CATEGORY, BUYPRICE, SELLPRICE, DESCRIPTION)
+  VALUES (id, :PRODUCTNAME, :CATEGORY, :BUYPRICE, :SELLPRICE, :DESCRIPTION);
+end;
