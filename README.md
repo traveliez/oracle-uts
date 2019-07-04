@@ -12,11 +12,11 @@ Field:
 - Sellprice Number (10,2)
 - Description Varchar (250)
 
-----Membuat Get q_product----
-hanya yang berbintang yang diisi
-Name diisi dengan "get_product"
-required privilege tidak usah diubah
-status tidak diubah
+----Membuat Get q_product----. 
+hanya yang berbintang yang diisi. 
+Name diisi dengan "get_product".  
+required privilege tidak usah diubah.  
+status tidak diubah. 
 
 - Cara Menambahkan Query Pada get_product
 select * from q_product
