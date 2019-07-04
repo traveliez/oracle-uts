@@ -67,3 +67,21 @@ begin
 delete from q_product where PRODUCTID = :ID;
 end;
 
+
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+Berikut adalah sintaks untuk menyambungkan dengan Database
+
+<?php
+$url = 'http://192.168.43.76:8888/apex/obe/product';
+$json = file_get_contents($url);
+$hasil = json_decode($json, true);
+?>
+
+
+Sintaks ini adalah untuk menyambungkan dengan bootstrap, yang digunakan untuk tampilan PHP.
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
