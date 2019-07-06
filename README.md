@@ -129,7 +129,7 @@ Pada tampilan Resource Handler :
 Requires secure access diubah menjadi (NO) 
 kemudian kalian tekan tombol Apply Change
 
-![gambar Get Product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/get.png)
+![gambar Get Product](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/get.png)
 Query :
 select * from q_product
 
@@ -149,7 +149,7 @@ Pada tampilan Resource Handler :
 Requires secure access diubah menjadi (NO) 
 kemudian kalian tekan tombol Apply Change
 
-![gambar POST Product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/POST.png)
+![gambar POST Product](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/POST.png)
 Query:
 begin
 insert into q_product (productid, buyprice, sellprice, description)
@@ -159,7 +159,7 @@ end;
 
 
 #### 9. put product
-![gambar Put product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-44-14.png)
+![gambar Put product](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-44-14.png)
 
 Query:
 begin
@@ -216,6 +216,27 @@ end;
         return response()->json($product);
     }
 }
+
+#### 11. Tampilan Web
+ini adalah contoh tampilan dari get product :
+![gambar GET](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/home.png)
+
+ini adalah tampilan dari post product :
+Tambah produk
+![gambar POST](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/tambah1.png)
+
+Hasil penambahan produk
+![gambar POST](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/tambah2.png)
+
+ini adalah tampilan put product :
+Update produk
+![gambar PUT](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/edit1.png)
+
+Hasil update produk
+![gambar PUT](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/edit2.png)
+
+ini adalah tampilan delete produk
+![gambar DELETE](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/hapus.png)
 
 
 
