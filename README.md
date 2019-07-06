@@ -54,3 +54,35 @@
 [oracle@localhost ~]$ echo %TNS_ADMIN%
 %TNE_ADMIN%
 [oracle@localhost ~]$ netmgr
+
+
+#### 4. Kita perlu mensetting pada Providers/product
+
+<?php
+
+namespace App;
+
+use Yajra\Oci8\Eloquent\OracleEloquent as Eloquent;
+
+class Product extends Eloquent {
+
+    public $table = 'obe.q_product';
+
+    protected $primaryKey = 'productid';
+
+    public $guarded = [];
+
+    public $timestamps = false;
+
+    // define binary/blob fields
+    public $binaries = ['productimage'];
+
+    // define the sequence name used for incrementing
+    // default value would be {table}_{primaryKey}_seq if not set
+    public $sequence = 'OBE.Q_PRODUCT_SEQ';
+
+}
+
+Pada bagian “$table” kamu memasukkan Sequence dari table kamu, perlu menambahkan “obe” sebelum table. 
+
+Pada bagian “$PrimaryKey” kamu memasukkan primary key  table kamu. 
