@@ -90,7 +90,22 @@ Pada bagian “$PrimaryKey” kamu memasukkan primary key  table kamu.
 #### 5. Seting RestFull pada Oracle
 ![gambar RestFull](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-30-34.png)
 
-DELETE
+#### 6.DELETE
+
+Contoh pembuatan RESTFULL DELETE
+Isi yang penting yang di tandai dengan * (bintang merah)
+Contohnya :
+*Nama : del_product
+*Pagination Size :25
+*URI Template : del_product/{id}
+dan jangan lupa untuk memilih method DELETE beserta Query nya 
+
+kemudian kalian tekan tombol Create
+
+Pada tampilan Resource Handler :
+Requires secure access diubah menjadi (NO) 
+kemudian kalian tekan tombol Apply Change
+
 ![gambar DELETE](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-31-39.png)
 Query:
 
@@ -98,12 +113,12 @@ begin
 delete from q_product where productid=:id
 end;
 
-#### 6. Setting Get Product
+#### 7. Setting Get Product
 ![gambar Get Product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/get.png)
 Query :
 select * from q_product
 
-#### 7. Setting Post Product
+#### 8. Setting Post Product
 ![gambar POST Product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/POST.png)
 Query:
 begin
@@ -113,7 +128,7 @@ values
 end;
 
 
-#### 8. put product
+#### 9. put product
 ![gambar Put product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-44-14.png)
 
 Query:
