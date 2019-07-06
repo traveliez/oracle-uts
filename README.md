@@ -151,4 +151,56 @@ begin
 update q_product set :productname, :category, :buyprice, :sellprice,  :description where productid= :id
 end;
 
+#### 10. Source Code Produk CRUD
+
+#Note
+
+1. Semua Query udah ada di Controllers/Auth/AjaxController
+
+//Insert Into
+    public function store(Request $request)
+    {
+        $product = new Product;
+        $product->productname = $request->productname;
+        $product->category = $request->category;
+        $product->buyprice = $request->buyprice;
+        $product->sellprice = $request->sellprice;
+        $product->description = $request->description;
+        $product->save();
+    
+        return response()->json($product);
+    }
+
+//Update
+    public function update(Request $request, $id)
+    {
+        $product = Product::find($id);
+        $product->productname = $request->productname;
+        $product->category = $request->category;
+        $product->buyprice = $request->buyprice;
+        $product->sellprice = $request->sellprice;
+        $product->description = $request->description;
+        $product->save();
+
+        return response()->json($product);
+    }
+
+//Tampil
+    public function index()
+    {
+        $products = Product::orderBy('productid','asc')->paginate(8);
+
+        return view('ajax-crud', compact('products'));
+    }
+
+   //Delete
+    public function destroy($id)
+    {
+        $product = Product::where('productid',$id)->delete();;
+   
+        return response()->json($product);
+    }
+}
+
+
 
