@@ -97,3 +97,8 @@ Query:
 begin 
 delete from q_product where productid=:id
 end;
+
+#### 6. Setting Get Product
+![gambar Get Product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/get.png)
+Query :
+select * from q_product
