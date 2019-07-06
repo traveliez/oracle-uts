@@ -111,3 +111,13 @@ insert into q_product (productid, buyprice, sellprice, description)
 values
 (:productid, :productname, :category, :buyprice, :sellprice, :description)
 end;
+
+
+#### 8. put product
+![gambar Put product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-44-14.png)
+
+Query:
+begin
+update q_product set :productname, :category, :buyprice, :sellprice,  :description where productid= :id
+end;
+
