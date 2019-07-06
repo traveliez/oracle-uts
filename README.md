@@ -73,18 +73,18 @@ class Product extends Eloquent {
   
 public $table = 'obe.q_product';  
   
-protected $primaryKey = 'productid';  
+   protected $primaryKey = 'productid';  
   
-public $guarded = [];  
+   public $guarded = [];  
 
-public $timestamps = false;  
+   public $timestamps = false;  
   
-/ define binary/blob fields  
-public $binaries = ['productimage'];  
+   // define binary/blob fields  
+    public $binaries = ['productimage'];  
   
-// define the sequence name used for incrementing
-// default value would be {table}_{primaryKey}_seq if not set
-public $sequence = 'OBE.Q_PRODUCT_SEQ';
+    // define the sequence name used for incrementing
+    // default value would be {table}_{primaryKey}_seq if not set
+    public $sequence = 'OBE.Q_PRODUCT_SEQ';
 
 }
 ```
@@ -102,9 +102,11 @@ Pada bagian “$PrimaryKey” kamu memasukkan primary key  table kamu.
 Contoh pembuatan RESTFUL DELETE
 Isi yang penting yang di tandai dengan * (bintang merah)
 Contohnya :
-*Nama : del_product
-*Pagination Size :25
-*URI Template : del_product/{id}
+
+- Nama : del_product
+- Pagination Size :25
+- URI Template : del_product/{id}
+
 dan jangan lupa untuk memilih method DELETE beserta Query nya
 
 kemudian kalian tekan tombol Create
@@ -125,9 +127,11 @@ end;
 Contoh pembuatan RESTFUL GET
 Isi yang penting yang di tandai dengan * (bintang merah)
 Contohnya :
-*Nama : get_product
-*Pagination Size :25
-*URI Template : get_product
+
+- Nama : get_product
+- Pagination Size :25
+- URI Template : get_product
+
 dan jangan lupa untuk memilih method GET serta Query nya
 
 kemudian kalian tekan tombol Create
@@ -137,17 +141,23 @@ Requires secure access diubah menjadi (NO)
 kemudian kalian tekan tombol Apply Change
 
 ![gambar Get Product](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/get.png)
-Query :
-select * from q_product
+
+### Query
+
+```sql
+select * from q_product;
+```
 
 #### 8. Setting Post Product
 
 Contoh pembuatan RESTFUL POST
 Isi yang penting yang di tandai dengan * (bintang merah)
 Contohnya :
-*Nama : post_product
-*Pagination Size :25
-*URI Template : post_product
+
+- Nama : post_product
+- Pagination Size :25
+- URI Template : post_product
+
 dan jangan lupa untuk memilih method POST serta Query nya
 
 kemudian kalian tekan tombol Create
@@ -157,21 +167,27 @@ Requires secure access diubah menjadi (NO)
 kemudian kalian tekan tombol Apply Change
 
 ![gambar POST Product](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/POST.png)
-Query:
+
+### Query POST
+
+```sql
 begin
 insert into q_product (productid, buyprice, sellprice, description)
 values
 (:productid, :productname, :category, :buyprice, :sellprice, :description)
 end;
+```
 
 #### 9. put product
 
 Contoh pembuatan RESTFUL PUT
 Isi yang penting yang di tandai dengan * (bintang merah)
 Contohnya :
-*Nama : put_product
-*Pagination Size :25
-*URI Template : put_product
+
+- Nama : put_product
+- Pagination Size :25
+- URI Template : put_product
+
 dan jangan lupa untuk memilih method put serta Query nya
 
 kemudian kalian tekan tombol Create
@@ -182,10 +198,13 @@ kemudian kalian tekan tombol Apply Change
 
 ![gambar Put product](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-44-14.png)
 
-Query:
+### Query PUT
+
+```sql
 begin
 update q_product set :productname, :category, :buyprice, :sellprice,  :description where productid= :id
 end;
+```
 
 #### 10. Source Code Produk CRUD
 
@@ -240,22 +259,22 @@ end;
 
 #### 11. Tampilan Web
 
-ini adalah contoh tampilan dari get product :
+- ini adalah contoh tampilan dari get product :
 ![gambar GET](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/home.png)
 
-ini adalah tampilan dari post product :
+- ini adalah tampilan dari post product :
 Tambah produk
 ![gambar POST](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/tambah1.png)
 
 Hasil penambahan produk
 ![gambar POST](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/tambah2.png)
 
-ini adalah tampilan put product :
+- ini adalah tampilan put product :
 Update produk
 ![gambar PUT](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/edit1.png)
 
 Hasil update produk
 ![gambar PUT](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/edit2.png)
 
-ini adalah tampilan delete produk
+- ini adalah tampilan delete produk
 ![gambar DELETE](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/hapus.png)
