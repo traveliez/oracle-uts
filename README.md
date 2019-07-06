@@ -92,7 +92,7 @@ Pada bagian “$PrimaryKey” kamu memasukkan primary key  table kamu.
 
 #### 6.DELETE
 
-Contoh pembuatan RESTFULL DELETE
+Contoh pembuatan RESTFUL DELETE
 Isi yang penting yang di tandai dengan * (bintang merah)
 Contohnya :
 *Nama : del_product
@@ -114,6 +114,21 @@ delete from q_product where productid=:id
 end;
 
 #### 7. Setting Get Product
+
+Contoh pembuatan RESTFUL GET
+Isi yang penting yang di tandai dengan * (bintang merah)
+Contohnya :
+*Nama : del_product
+*Pagination Size :25
+*URI Template : get_product
+dan jangan lupa untuk memilih method GET serta Query nya 
+
+kemudian kalian tekan tombol Create
+
+Pada tampilan Resource Handler :
+Requires secure access diubah menjadi (NO) 
+kemudian kalian tekan tombol Apply Change
+
 ![gambar Get Product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/get.png)
 Query :
 select * from q_product
@@ -135,4 +150,5 @@ Query:
 begin
 update q_product set :productname, :category, :buyprice, :sellprice,  :description where productid= :id
 end;
+
 
