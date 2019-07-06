@@ -97,32 +97,7 @@ Pada bagian “$PrimaryKey” kamu memasukkan primary key  table kamu.
 
 ![gambar RestFull](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-30-34.png)
 
-#### 6.DELETE
-
-Contoh pembuatan RESTFUL DELETE
-Isi yang penting yang di tandai dengan * (bintang merah)
-Contohnya :
-
-- Nama : del_product
-- Pagination Size :25
-- URI Template : del_product/{id}
-
-dan jangan lupa untuk memilih method DELETE beserta Query nya
-
-kemudian kalian tekan tombol Create
-
-Pada tampilan Resource Handler :
-Requires secure access diubah menjadi (NO)
-kemudian kalian tekan tombol Apply Change
-
-![gambar DELETE](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-31-39.png)
-Query:
-
-begin
-delete from q_product where productid=:id
-end;
-
-#### 7. Setting Get Product
+#### 6. Setting Get Product
 
 Contoh pembuatan RESTFUL GET
 Isi yang penting yang di tandai dengan * (bintang merah)
@@ -148,7 +123,7 @@ kemudian kalian tekan tombol Apply Change
 select * from q_product;
 ```
 
-#### 8. Setting Post Product
+#### 7. Setting Post Product
 
 Contoh pembuatan RESTFUL POST
 Isi yang penting yang di tandai dengan * (bintang merah)
@@ -178,7 +153,7 @@ values
 end;
 ```
 
-#### 9. put product
+#### 8. Setting Put Product
 
 Contoh pembuatan RESTFUL PUT
 Isi yang penting yang di tandai dengan * (bintang merah)
@@ -203,6 +178,33 @@ kemudian kalian tekan tombol Apply Change
 ```sql
 begin
 update q_product set :productname, :category, :buyprice, :sellprice,  :description where productid= :id
+end;
+```
+
+#### 9. Setting Delete Product
+
+Contoh pembuatan RESTFUL DELETE
+Isi yang penting yang di tandai dengan * (bintang merah)
+Contohnya :
+
+- Nama : del_product
+- Pagination Size :25
+- URI Template : del_product/{id}
+
+dan jangan lupa untuk memilih method DELETE beserta Query nya
+
+kemudian kalian tekan tombol Create
+
+Pada tampilan Resource Handler :
+Requires secure access diubah menjadi (NO)
+kemudian kalian tekan tombol Apply Change
+
+![gambar DELETE](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-31-39.png)
+Query:
+
+```sql
+begin
+delete from q_product where productid=:id
 end;
 ```
 
