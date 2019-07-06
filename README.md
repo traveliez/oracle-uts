@@ -86,3 +86,14 @@ class Product extends Eloquent {
 Pada bagian “$table” kamu memasukkan Sequence dari table kamu, perlu menambahkan “obe” sebelum table. 
 
 Pada bagian “$PrimaryKey” kamu memasukkan primary key  table kamu. 
+
+#### 5. Seting RestFull pada Oracle
+![gambar RestFull](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-30-34.png)
+
+DELETE
+![gambar DELETE](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-31-39.png)
+Query:
+
+begin 
+delete from q_product where productid=:id
+end;
