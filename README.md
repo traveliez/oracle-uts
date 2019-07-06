@@ -118,7 +118,7 @@ end;
 Contoh pembuatan RESTFUL GET
 Isi yang penting yang di tandai dengan * (bintang merah)
 Contohnya :
-*Nama : del_product
+*Nama : get_product
 *Pagination Size :25
 *URI Template : get_product
 dan jangan lupa untuk memilih method GET serta Query nya 
@@ -135,10 +135,10 @@ select * from q_product
 
 #### 8. Setting Post Product
 
-Contoh pembuatan RESTFULL POST
+Contoh pembuatan RESTFUL POST
 Isi yang penting yang di tandai dengan * (bintang merah)
 Contohnya :
-*Nama : del_product
+*Nama : post_product
 *Pagination Size :25
 *URI Template : post_product
 dan jangan lupa untuk memilih method POST serta Query nya 
@@ -159,6 +159,21 @@ end;
 
 
 #### 9. put product
+
+Contoh pembuatan RESTFUL PUT
+Isi yang penting yang di tandai dengan * (bintang merah)
+Contohnya :
+*Nama : put_product
+*Pagination Size :25
+*URI Template : put_product
+dan jangan lupa untuk memilih method put serta Query nya 
+
+kemudian kalian tekan tombol Create
+
+Pada tampilan Resource Handler :
+Requires secure access diubah menjadi (NO) 
+kemudian kalian tekan tombol Apply Change
+
 ![gambar Put product](https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/Screenshot%20at%202019-07-06%2016-44-14.png)
 
 Query:
