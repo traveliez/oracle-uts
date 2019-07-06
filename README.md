@@ -134,6 +134,21 @@ Query :
 select * from q_product
 
 #### 8. Setting Post Product
+
+Contoh pembuatan RESTFULL POST
+Isi yang penting yang di tandai dengan * (bintang merah)
+Contohnya :
+*Nama : del_product
+*Pagination Size :25
+*URI Template : post_product
+dan jangan lupa untuk memilih method POST serta Query nya 
+
+kemudian kalian tekan tombol Create
+
+Pada tampilan Resource Handler :
+Requires secure access diubah menjadi (NO) 
+kemudian kalian tekan tombol Apply Change
+
 ![gambar POST Product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/POST.png)
 Query:
 begin
