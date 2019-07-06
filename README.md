@@ -102,3 +102,12 @@ end;
 ![gambar Get Product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/get.png)
 Query :
 select * from q_product
+
+#### 7. Setting Post Product
+![gambar POST Product] (https://github.com/residwi/CRUD-Restful-Oracle/blob/master/oracle-crud/storage/POST.png)
+Query:
+begin
+insert into q_product (productid, buyprice, sellprice, description)
+values
+(:productid, :productname, :category, :buyprice, :sellprice, :description)
+end;
