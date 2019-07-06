@@ -20,7 +20,7 @@
 		5) SellPrice (Number 10, 2)  
 		6) Description (Varchar 250)   
    
-   2. Kamu perlu merubah IP TNS dan HOST sesuai dengan IP oracle kamu *config/oracle*.  
+ ####2. Kamu perlu merubah IP TNS dan HOST sesuai dengan IP oracle kamu *config/oracle*.  
     
   > EX:  
 >tns'            => env('DB_TNS', '(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.43.75)(PORT=1521)) .  
@@ -49,4 +49,8 @@
 > ];  
      
    
-   
+#### 3. Berikut ini adalah untuk melihat Service Name dan Port Number
+
+[oracle@localhost ~]$ echo %TNS_ADMIN%
+%TNE_ADMIN%
+[oracle@localhost ~]$ netmgr
